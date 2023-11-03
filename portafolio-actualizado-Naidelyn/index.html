@@ -1,13 +1,26 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./less/style.less" />
+</head>
+
+<body>
+   {{> header}}
+    <main>
+        <section class="hero-panel">
+            <h1>El limite en la programación es el cielo</h1>
+            <picture>
+                <source srcset="https://unsplash.it/1024/640?image=32" media="(min-width:1024px)" />
+                <img src="https://unsplash.it/380/380?image=32" alt="Cabecera Principal" />
+            </picture>
+        </section>
+        
+    </main>
+    {{> footer}}
+</body>
+
 </html>
